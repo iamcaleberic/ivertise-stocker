@@ -22,7 +22,7 @@ $user = new User;
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             All Make-up Artists :  <?php echo DB::getInstance()->query("SELECT * FROM users WHERE type='mua'")->count(); ?>
+                             All Make-up Artists :  <?php echo DB::getInstance()->query("SELECT * FROM users WHERE mua='mua'")->count(); ?>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -39,7 +39,7 @@ $user = new User;
 
                                     <?php
                                     $index = 1;
-                                    $users = DB::getInstance()->query("SELECT * FROM users WHERE type='mua'");
+                                    $users = DB::getInstance()->query("SELECT * FROM users WHERE mua='mua'");
                                     if (!$users->count()) {
                                     echo "No User(s)!";
                                     }else{

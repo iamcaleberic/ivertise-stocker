@@ -57,3 +57,66 @@
 [19-Feb-2016 16:52:40 UTC] PHP Warning:  include_once(): Failed opening 'includes/templates/sidebar.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mjedeveloper/public_html/demo/users/dashboard.php on line 13
 [19-Feb-2016 16:52:40 UTC] PHP Warning:  require_once(includes/templates/footer.php): failed to open stream: No such file or directory in /home/mjedeveloper/public_html/demo/users/dashboard.php on line 164
 [19-Feb-2016 16:52:40 UTC] PHP Fatal error:  require_once(): Failed opening required 'includes/templates/footer.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mjedeveloper/public_html/demo/users/dashboard.php on line 164
+[19-Feb-2016 21:08:17 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:08:26 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:11:56 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:11:59 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:12:16 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:15:24 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:20:02 UTC] PHP Fatal error:  Call to undefined method User::count() in /home/mjedeveloper/public_html/demo/users/models.php on line 368
+[19-Feb-2016 21:20:06 UTC] PHP Fatal error:  Call to undefined method User::count() in /home/mjedeveloper/public_html/demo/users/models.php on line 368
+[19-Feb-2016 21:20:08 UTC] PHP Fatal error:  Call to undefined method User::count() in /home/mjedeveloper/public_html/demo/users/models.php on line 368
+[19-Feb-2016 21:20:12 UTC] PHP Fatal error:  Call to undefined method User::count() in /home/mjedeveloper/public_html/demo/users/models.php on line 368
+[19-Feb-2016 21:20:12 UTC] PHP Fatal error:  Call to undefined method User::count() in /home/mjedeveloper/public_html/demo/users/models.php on line 368
+[19-Feb-2016 21:20:51 UTC] PHP Fatal error:  Call to undefined method User::results() in /home/mjedeveloper/public_html/demo/users/models.php on line 372
+[19-Feb-2016 21:20:54 UTC] PHP Fatal error:  Call to undefined method User::results() in /home/mjedeveloper/public_html/demo/users/models.php on line 372
+[19-Feb-2016 21:24:53 UTC] PHP Fatal error:  Call to undefined method User::results() in /home/mjedeveloper/public_html/demo/users/models.php on line 372
+[19-Feb-2016 21:24:56 UTC] PHP Fatal error:  Call to undefined method User::results() in /home/mjedeveloper/public_html/demo/users/models.php on line 372
+[19-Feb-2016 21:25:01 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 21:25:03 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:31 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:31 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:31 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:31 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:31 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:31 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:01:35 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:06:13 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[19-Feb-2016 22:14:22 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[20-Feb-2016 03:54:17 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 377
+[20-Feb-2016 04:18:55 UTC] PHP Fatal error:  Call to undefined method stdClass::data() in /home/mjedeveloper/public_html/demo/users/models.php on line 371
+[20-Feb-2016 05:50:06 UTC] PHP Warning:  require_once(templates/header.php): failed to open stream: No such file or directory in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 05:50:06 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/header.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 05:59:17 UTC] PHP Warning:  require_once(templates/header.php): failed to open stream: No such file or directory in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 05:59:17 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/header.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 05:59:20 UTC] PHP Warning:  require_once(templates/header.php): failed to open stream: No such file or directory in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 05:59:20 UTC] PHP Fatal error:  require_once(): Failed opening required 'templates/header.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 05:59:44 UTC] PHP Fatal error:  Call to undefined function escape() in /home/mjedeveloper/public_html/demo/users/model_info.php on line 80
+[20-Feb-2016 06:08:32 UTC] PHP Warning:  require_once(demo/templates/header.php): failed to open stream: No such file or directory in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 06:08:32 UTC] PHP Fatal error:  require_once(): Failed opening required 'demo/templates/header.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mjedeveloper/public_html/demo/users/model_info.php on line 2
+[20-Feb-2016 06:09:13 UTC] PHP Fatal error:  Call to undefined function escape() in /home/mjedeveloper/public_html/demo/users/model_info.php on line 79
+[20-Feb-2016 06:12:13 UTC] PHP Fatal error:  Call to undefined function escape() in /home/mjedeveloper/public_html/demo/users/model_info.php on line 79
+[20-Feb-2016 18:25:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/models.php:143) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:27:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/models.php:143) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:28:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/models.php:143) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:53:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:53:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:53:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:55:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:55:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 18:56:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:17:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:27) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:17:45 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:31:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:142) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:31:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:33:18 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:27) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:36:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:142) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:37:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:27) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 19:56:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:27) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 20:03:29 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:27) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 20:18:58 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 20:19:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:141) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[20-Feb-2016 20:23:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:141) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[21-Feb-2016 07:39:51 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/photography.php:133) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[21-Feb-2016 08:48:52 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mjedeveloper/public_html/demo/users/mua.php:128) in /home/mjedeveloper/public_html/demo/users/classes/Redirect.php on line 17
+[21-Feb-2016 16:17:07 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/mjedeveloper/public_html/demo/users/uploaded.php on line 183

@@ -6572,7 +6572,7 @@ div.user-menu div.user-menu-content:not(.active){
 /* -- Custom classes for the snippet, won't effect any existing bootstrap classes of your site, but can be reused. -- */
 
 .user-pad {
-    padding: 20px 25px;
+      padding: 20px 25px 0px;
 }
 
 .no-pad {

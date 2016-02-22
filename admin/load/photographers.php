@@ -22,7 +22,7 @@ $user = new User;
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             Total available Photographers :  <?php echo DB::getInstance()->query("SELECT * FROM users WHERE type='photographer'")->count(); ?>
+                             Total available Photographers :  <?php echo DB::getInstance()->query("SELECT * FROM users WHERE photographer='photographer'")->count(); ?>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -39,7 +39,7 @@ $user = new User;
 
                                     <?php
                                     $index = 1;
-                                    $users = DB::getInstance()->query("SELECT * FROM users WHERE type='photographer'");
+                                    $users = DB::getInstance()->query("SELECT * FROM users WHERE photographer='photographer'");
                                     if (!$users->count()) {
                                     echo "No User(s)!";
                                     }else{

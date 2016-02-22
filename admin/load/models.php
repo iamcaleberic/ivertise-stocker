@@ -22,7 +22,7 @@ $user = new User;
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             Registered Ivertise Africa Model(s) : <?php echo DB::getInstance()->query("SELECT * FROM users WHERE type='model'")->count(); ?>
+                             Registered Ivertise Africa Model(s) : <?php echo DB::getInstance()->query("SELECT * FROM users WHERE model='model'")->count(); ?>
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
@@ -39,7 +39,7 @@ $user = new User;
 
                                     <?php
                                     $index = 1;
-                                    $users = DB::getInstance()->query("SELECT * FROM users WHERE type='model'");
+                                    $users = DB::getInstance()->query("SELECT * FROM users WHERE model='model'");
                                     if (!$users->count()) {
                                     echo "No User(s)!";
                                     }else{

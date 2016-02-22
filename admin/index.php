@@ -64,49 +64,49 @@ font-size: 16px;"> <?php echo $user->data()->username;?> &nbsp; | <a href="logou
                   <hr />
                 <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-6">
-			<div class="panel panel-back noti-box">
+      <div class="panel panel-back noti-box">
                 <span class="icon-box bg-color-red set-icon">
                     <i class="fa fa-picture-o"></i>
                 </span>
                 <br>
                 <div class="text-box" >
                     <p class="main-text">
-                    <?php echo DB::getInstance()->query("SELECT * FROM users WHERE type='img_cont'")->count(); ?> Total
+                    <?php echo DB::getInstance()->query("SELECT * FROM users WHERE stock='stock'")->count(); ?> Total
                     </p>
                     <p class="text-muted">Image Contributor(s)</p>
                 </div>
              </div>
-		     </div>
+         </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
-			<div class="panel panel-back noti-box">
+      <div class="panel panel-back noti-box">
                 <span class="icon-box bg-color-green set-icon">
                     <i class="fa fa-female"></i>
                 </span>
                 <br>
                 <div class="text-box" >
                     <p class="main-text">
-                    <?php echo DB::getInstance()->query("SELECT * FROM users WHERE type='model'")->count(); ?> Total
+                    <?php echo DB::getInstance()->query("SELECT * FROM users WHERE model='model'")->count(); ?> Total
                     </p>
                     <p class="text-muted">Active Model(s)</p>
                 </div>
              </div>
-		     </div>
+         </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
-			<div class="panel panel-back noti-box">
+      <div class="panel panel-back noti-box">
                 <span class="icon-box bg-color-blue set-icon">
                     <i class="fa fa-edit"></i>
                 </span>
                 <br>
                 <div class="text-box" >
                     <p class="main-text">
-                    <?php echo DB::getInstance()->query("SELECT * FROM users WHERE type='mua'")->count(); ?> Total
+                    <?php echo DB::getInstance()->query("SELECT * FROM users WHERE mua='mua'")->count(); ?> Total
                     </p>
                     <p class="text-muted">Make-up Artist(s)</p>
                 </div>
              </div>
-		     </div>
+         </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
-			<div class="panel panel-back noti-box">
+      <div class="panel panel-back noti-box">
                 <span class="icon-box bg-color-brown set-icon">
                     <i class="fa fa-camera"></i>
                 </span>
@@ -114,18 +114,18 @@ font-size: 16px;"> <?php echo $user->data()->username;?> &nbsp; | <a href="logou
                 <div class="text-box" >
                     <p class="main-text">
                     <?php 
-                    echo DB::getInstance()->query("SELECT * FROM users WHERE type='photographer'")->count(); ?> Total
+                    echo DB::getInstance()->query("SELECT * FROM users WHERE photographer='photographer'")->count(); ?> Total
                     </p>
                     <p class="text-muted">Pro Photographer</p>
                 </div>
              </div>
-		     </div>
-			</div>
+         </div>
+      </div>
                  <!-- /. ROW  -->
                 <hr />
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-xs-12">
-			<div class="panel panel-back adm noti-box">
+      <div class="panel panel-back adm noti-box">
                 <span class="icon-box bg-color-blue">
                     <i class="fa fa-users"></i>
                 </span>
@@ -164,7 +164,7 @@ font-size: 16px;"> <?php echo $user->data()->username;?> &nbsp; | <a href="logou
                 </div>
                 </div>
              </div>
-		     </div>
+         </div>
 
 
                     <div class="col-md-3 col-sm-12 col-xs-12">

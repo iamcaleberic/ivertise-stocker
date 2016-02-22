@@ -356,14 +356,15 @@ var Grid = (function() {
 			this.$dimension_medium = $('<h3></h3>');
 			this.$dimension_large = $('<h3></h3>');
 			this.$download = $('<h6></h6>');
+			this.$zcard = $('<div></div>');
 			this.$href = $( '' );
 			this.$detailsone = $( '<div class="og-details_inner_one"></div>' ).append([this.$image_category]);
 			this.$detailstwo = $( '<div class="og-details_inner_two"></div>' ).append(this.$dimension_small,this.$dimension_medium,this.$dimension_large);
 			this.$detailsthree = $( '<div class="og-details_inner_three"></div>' ).append(this.$price,this.$price_medium,this.$price_large);
 			this.$detailsfour = $( '<div class="og-details_inner_one"></div>' ).append( this.$size,this.$size_medium,this.$size_large);
-			this.$detailsfive = $( '<div class="og-details_inner_one"></div>' ).append( );
-
-			this.$details = $( '<div class="og-details_inner"></div>' ).append(this.$title,this.$description,this.$copywrite,this.$detailsone,this.$detailstwo,this.$detailsthree,this.$detailsfour,this.$detailsfive,this.$download);
+			this.$detailsfive = $( '<div class="og-details_inner_one"></div>' ).append(this.$zcard );
+			this.$details = $( '<div class="og-details_inner"></div>' 
+			).append(this.$title,this.$description,this.$copywrite,this.$detailsone,this.$detailstwo,this.$detailsthree,this.$detailsfour,this.$download,this.$detailsfive);
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
 			this.$closePreview = $( '<span class="og-close"></span>' );
@@ -399,6 +400,7 @@ var Grid = (function() {
 				eldata = {
 					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
+					smallsrc : $itemEl.data( 'smallsrc' ),
 					title : $itemEl.data( 'title' ),
 					description : $itemEl.data( 'description' ),
 					dimension_small : $itemEl.data( 'dimension_small' ),
@@ -406,6 +408,7 @@ var Grid = (function() {
 					dimension_large : $itemEl.data( 'dimension_large' ),
 					image_category : $itemEl.data( 'image_category' ),
 					download : $itemEl.data( 'download' ),
+					zcard : $itemEl.data( 'zcard' ),
 					price : $itemEl.data( 'price' ),
 					price_medium : $itemEl.data( 'price_medium' ),
 					price_large: $itemEl.data( 'price_large' ),
@@ -420,7 +423,8 @@ var Grid = (function() {
 			this.$dimension_medium.html( eldata.dimension_medium );
 			this.$dimension_large.html( eldata.dimension_large );
 			this.$image_category.html( eldata.image_category );
-			this.$download.html( eldata.download );
+			this.$zcard.html( eldata.zcard );
+			this.$download.html( eldata.download);
 			this.$description.html( eldata.description );
 			this.$price.html( eldata.price );
 			this.$price_medium.html( eldata.price_medium );

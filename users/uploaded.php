@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 function getExtension($str) {
         $i = strrpos($str,".");
         if (!$i) { return ""; }
@@ -18,7 +18,8 @@ if(isset($_FILES['image_file']))
     $destination_folder_small = 'assets/images/small/';
     $destination_folder_medium = 'assets/images/medium/';
     $destination_folder_original = 'assets/images/original/';
-    $watermark_png_file = 'assets/images/watermark/watermark.png'; //watermark png file
+    $watermark_png_file_land = 'assets/images/watermark/watermark_land.png'; //watermark png file
+    $watermark_png_file_port = 'assets/images/watermark/watermark_port.png'; //watermark png file
     $watermark_png_file_thumb = 'assets/images/watermark/watermark_thumb.png'; //watermark png file
     $destination_folder_thumbnails = "assets/images/thumbs/";
 
@@ -96,24 +97,37 @@ if(isset($_FILES['image_file']))
           }
 
 
-          if(imagecopyresampled($tmp_small, $image_resource , 0, 0, 0, 0 ,$small_width,$small_height, $img_width, $img_height))
+if(imagecopyresampled($tmp_small, $image_resource , 0, 0, 0, 0 ,$small_width,$small_height, $img_width, $img_height))
           {
 
               if(!is_dir($destination_folder_small)){
                 mkdir($destination_folder_small);//create dir if it doesn't exist
               }
 
-
+        if($small_width > $small_height){
           //center watermark
-              $watermark_left = ($small_width/2)-(150/2); //watermark left
-              $watermark_bottom = ($small_height/2)-(50/2); //watermark bottom
+              $watermark_left = 0; //watermark left
+              $watermark_bottom = 30; //watermark bottom
 
-              $watermark = imagecreatefrompng($watermark_png_file_thumb); //watermark image
-              imagecopy($tmp_small, $watermark, $watermark_left, $watermark_bottom, 0, 0,150, 50); //merge image
-
-
-                //Or Save image to the folder
+        
+         $watermark = imagecreatefrompng($watermark_png_file_land); //watermark image
+              imagecopy($tmp_small, $watermark, $watermark_left, $watermark_bottom, 0, 0,450, 500); //merge image  
+               //Or Save image to the folder
               imagejpeg($tmp_small, $destination_folder_small.'/'.$image_name , 90);
+                
+                }else{
+              
+              //center watermark
+              $watermark_left = 0; //watermark left
+              $watermark_bottom = 30; //watermark bottom
+
+        
+         $watermark = imagecreatefrompng($watermark_png_file_port); //watermark image
+              imagecopy($tmp_small, $watermark, $watermark_left, $watermark_bottom, 0, 0,450, 500); //merge image  
+               //Or Save image to the folder
+              imagejpeg($tmp_small, $destination_folder_small.'/'.$image_name , 90);
+                
+                }
             }
 
 
@@ -150,6 +164,7 @@ if(isset($_FILES['image_file']))
 
         // Escape user inputs for security
         $image_title = mysql_real_escape_string($_POST['title'],$link);
+        $image_genre = mysql_real_escape_string($_POST['genre'],$link);
         $image_price = mysql_real_escape_string($_POST['price'],$link);
         $image_author = $_SESSION['email'];
         $image_category = mysql_real_escape_string($_POST['category'],$link);
@@ -162,15 +177,15 @@ if(isset($_FILES['image_file']))
 
 
 // attempt insert query execution
-$sql = "INSERT INTO images (title,price,author,category,description,keywords,Release_form,url)
- VALUES ('$image_title', '$image_price','$image_author','$image_category','$image_description','$image_keywords','$release','$image_src')";
+$sql = "INSERT INTO images (title,price,author,category,description,keywords,Release_form,url,genre)
+ VALUES ('$image_title', '$image_price','$image_author','$image_category','$image_description','$image_keywords','$release','$image_src','$image_genre')";
    if(mysql_query($sql,$link)){
-          header("Location: models.php");
+          header("Location: check.php");
       }else{
           echo "ERROR: Could not able to execute $sql. " . mysql_error($link);
         }
 
+
 // close connection
   mysql_close($link);
   ?>
-      

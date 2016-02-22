@@ -55,7 +55,7 @@ x.og-grid {
 	margin-left: 560px;
 }
 .og-details_inner_one{
-	width: 112px;
+	width: 140px;
 	height: 100px;
 	margin: 2px;
 	float: left;
@@ -141,6 +141,7 @@ p2{
 
 .og-fullimg img {
 	display: inline-block;
+	max-height:500px;
 
 }
 
@@ -161,6 +162,7 @@ height:50px;
     background-color: #333;
     color: #fff;
    border:none;
+   width:40px;
 
 
 

@@ -89,6 +89,10 @@ body a {
 .logo h1 a {
   color: #fff;
 }
+.tag_img{
+    width: 600px;
+    height: 50px;
+}
 
 .top_right {
   float: right;

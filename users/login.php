@@ -19,7 +19,7 @@ if (Input::exists()) {
             $login = $user->login(Input::get('username'), Input::get('password'), $remember);
             if ($login) {
                //echo "Success";
-                Redirect::to('index.php');
+                Redirect::to('check.php');
             } else {
                 echo "Sorry, Login faied";
             }
@@ -38,10 +38,10 @@ input{border:1px solid #177856 !important;
 
 }
 .button{
-	background-color:white !important;
-	border:1px solid #177856 !important;
-	color:black !important;
-	border-radius:5px;
+  background-color:white !important;
+  border:1px solid #177856 !important;
+  color:black !important;
+  border-radius:5px;
 
 
 }

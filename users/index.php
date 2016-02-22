@@ -90,7 +90,7 @@ if ($user->isLoggedIn()) { ?>
                                 <p class="green">You have 0 new messages</p>
                             </li>
                             <li>
-                                <a href="index.html#">
+                                <a href="index.php#">
                                     <span class="photo"><img alt="avatar" src="<?php echo $user->data()->avatar; ?>"></span>
                                     <span class="subject">
                                     <span class="from">Admin</span>
